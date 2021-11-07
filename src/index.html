@@ -1,13 +1,37 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>DemoElectron</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First App Width Electron</title>
+        <link rel="stylesheet" href="styles/styles.css">        
+        <script id="func" defer src="js/appFunctions.js"></script>
+    </head>
+    <body>
+        <div class="mainApp">
+            <div class="topBar">
+                <div class="titleBar">
+                    <button id="showHideMenus" class="toggleButton"></button>
+                    <img src="icons/icon_top_bar.png" alt="">
+                    <div class="title">
+                        My App Top Bar
+                    </div>
+                </div>
+                <div class="titleBarBtns">
+                    <button id="minimizeBtn" class="topBtn minimizeBtn" title="Minimize"></button>
+                    <button id="maxResBtn" class="topBtn maximizeBtn" title="Maximize"></button>
+                    <button id="closeBtn" class="topBtn closeBtn" title="Close"></button>
+                </div>
+            </div>
+            <div class="contentArea">
+                <div id="mySidebar" class="leftMenu">
+                    
+                </div>
+                <div class="contentPages">
+                    <app-root></app-root>
+                </div>
+            </div>
+        </div>      
+    </body>
 </html>
+
+
+
